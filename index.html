@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Land Registry DApp</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.10.1/dist/web3.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🏡 Land Registry using BlockChain</h1>
+
+    <div class="card">
+      <h2>Connect Wallet</h2>
+      <button id="connectWallet" class="btn">Connect MetaMask</button>
+      <p id="walletAddress" class="info-text"></p>
+    </div>
+
+    <div class="card">
+      <h2>Register Land</h2>
+      <input type="number" id="landId" placeholder="Land ID">
+      <input type="text" id="ownerName" placeholder="Owner Name">
+      <input type="text" id="location" placeholder="Location">
+      <input type="number" id="price" placeholder="Price">
+      <button id="registerLand" class="btn">Register Land</button>
+      <p id="registerStatus" class="info-text"></p>
+    </div>
+
+    <div class="card">
+      <h2>Check Land</h2>
+      <input type="number" id="checkLandId" placeholder="Land ID">
+      <button id="checkLand" class="btn">Check Land Exists</button>
+      <p id="checkStatus" class="info-text"></p>
+    </div>
+
+    <div class="card">
+      <h2>View Land Details</h2>
+      <input type="number" id="viewLandId" placeholder="Land ID">
+      <button id="viewLand" class="btn">View Land</button>
+      <p id="landDetails" class="info-text"></p>
+    </div>
+
+    <div class="card">
+      <h2>Transfer Land</h2>
+      <input type="number" id="transferLandId" placeholder="Land ID">
+      <input type="text" id="newOwnerName" placeholder="New Owner Name">
+      <input type="text" id="newOwnerAddress" placeholder="New Owner Address">
+      <button id="transferLandBtn" class="btn">Transfer Land</button>
+      <p id="transferStatus" class="info-text"></p>
+    </div>
+
+    <div class="card">
+      <h2>All Lands</h2>
+      <button id="listLandIds" class="btn">Get All Land Details</button>
+      <div id="allLandIds" class="table-container"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
